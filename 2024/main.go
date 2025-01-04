@@ -2,6 +2,7 @@ package main
 
 import (
 	"aoc/2024/day1"
+	"aoc/2024/day2"
 	"flag"
 	"log"
 )
@@ -16,6 +17,10 @@ func main() {
 	case 1:
 		{
 			day1.Run(*part, *test)
+		}
+	case 2:
+		{
+			day2.TestControlData()
 		}
 	default:
 		log.Fatal("\nNo handler find for the day %d", *day)
